@@ -15,9 +15,9 @@
 
 % personal data
 \name{Milad}{Teimouri}
-\address{Backend Software Engineer}{}{}
+\address{Software Engineer}
   
-\newcommand*{\customcventry}[7][.25em]{
+\newcommand*{\customcventry}[7][.23em]{
   \begin{tabular}{@{}l} 
     {\bfseries #4}
   \end{tabular}
@@ -39,7 +39,7 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\customcvproject}[4][.25em]{
+\newcommand*{\customcvproject}[4][.23em]{
 %   \vfill\noindent
   \begin{tabular}{@{}l} 
     {\bfseries #2}
@@ -63,7 +63,7 @@
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-23mm}
+\vspace*{-25mm}
 
 \begin{center}
 \begin{tabular}{ c c c c }
@@ -79,14 +79,15 @@
 \end{center}
 
 \section{EXPERIENCES}
-{\customcventry{October  2020 -  Present}{Software Engineer}{\href{https://www.linkedin.com/company/digikala/about/}{Digikala}}{\textasciitilde 2 yrs}{}
+{\customcventry{October  2020 -  Present}{Software Engineer}{\href{https://www.linkedin.com/company/digikala/about/}{Digikala}}{+2 yrs}{}
 {\begin{itemize}
   \item \href{https://www.linkedin.com/company/digikala/about/}{Digikala Group} is the biggest e-commerce in middle-east with more than 30 million visitors and 5 million orders per month.
   \item Being in shopping squad, responsible for APIs of \href{https://play.google.com/store/apps/details?id=com.digikala.diagon}{Digikala Application} that has more than 20 million installs.
-  \item Rewrite APIs and refactor legacy codes of \href{https://www.digikala.com/}{digikala.com} \& \href{https://www.digistyle.com/}{digistyle.com} that reduced~40\% of resource requests.
-  \item Design \& Develop social e-commerce called \href{https://www.adsoftheworld.com/campaigns/digikala-magnet}{Magnet} that is like Instagram, and currently has more than 1 million users and \textasciitilde100k post created per month.
-  \item Participate in onboarding new joiners, hiring process, and revising team structure
-\item Main used technologies: PHP, MySQL, Redis, Elasticsearch, Docker, Memcached, Swagger
+  \item Rewrote APIs and refactor legacy codes of \href{https://www.digikala.com/}{digikala.com} \& \href{https://www.digistyle.com/}{digistyle.com} that reduced~40\% of resource requests.
+  \item Designed \& Developed social e-commerce called \href{https://www.adsoftheworld.com/campaigns/digikala-magnet}{Magnet} that is like Instagram, and currently has more than 1 million users and \textasciitilde100k post created per month.
+    \item Involved in migrating from monolith to microservices architecture like writing CQRS service
+  \item Participated in onboarding new joiners, hiring process, and revising team structure
+\item Main used technologies: \textbf{PHP}, \textbf{MySQL}, \textbf{Redis}, \textbf{Elasticsearch}, \textbf{Docker}, \textbf{Memcached}, \textbf{Kafka}, \textbf{Swagger}
 \end{itemize}
 }
 
@@ -96,14 +97,14 @@
   \item Developed a billing system which is used by electricity Companies that handles the data of over 10M Power subscribers from all over the country
   \item Created subscriber surveillance and bill payment system that has all energy subscriber's data that intended to remove bill papers \href{https://bargheman.com/}{(bargheman.com)}
   \item Structured an automated payment processing system, that gathers financial data from different banks (\textasciitilde2k documents per day) to transmit them to each power distribution and generating financial reports, that removed the need for human work.
-\item Main used technologies: Laravel, SQLServer, MongoDB, Redis, Python, C++
+\item Main used technologies: \textbf{Laravel}, \textbf{SQLServer}, \textbf{MongoDB}, \textbf{Redis}, \textbf{Python}, \textbf{C++}
 \end{itemize}
 }
 
 {\customcventry{April 2017 - September 2017}{Backend Software Engineer}{Behpardaz Pishro}{6 mth}{}
 {\begin{itemize}
   \item Developed a system ordered by the Ministry of Power for gathering information of about 32M subscribers of electricity from all over the country, generating reports on the data.
-\item Main used technologies: Laravel, Oracle, MongoDB 
+\item Main used technologies: \textbf{Laravel}, \textbf{Oracle}, \textbf{MongoDB}
 \end{itemize}
 }
 
@@ -116,10 +117,10 @@
                 \item Proficient  in \textbf{PHP}
           \item Proficient in \textbf{relational databases} (\textbf{SQL}) and
           \textbf{Database Design}
-          \item Proficient in \textbf{API Design}
+          \item Proficient in \textbf{API Design} and \textbf{Desgin Patterns}
           \item Experienced with \textbf{NoSQL} databases (\textbf{Redis}, \textbf{MongoDB}, \textbf{Memcached})
+        \item Experienced with \textbf{Docker}, \textbf{Elasticsearch}, \textbf{Kafka} and \textbf{Git}
           \item Experienced with \textbf{Python}, \textbf{Golang}  and \textbf{C++}
-          \item Experienced with \textbf{Docker}, \textbf{Git} and \textbf{Elasticsearch}
   \item Experienced with  \textbf{Linux} and Server maintenance
     \end{itemize}}%
 \end{minipage}%
@@ -130,10 +131,6 @@
 {\customcventry{2012-2016}{Bachelor of Technology in Computer engineering}{\href{https://www.linkedin.com/school/iran-university-of-science-and-technology/}{Iran University of Science and Technology}}{}{}{- Third Rank, 16.85 GPA}}
 }
 }
-
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications} 
 
 \end{document}
 
