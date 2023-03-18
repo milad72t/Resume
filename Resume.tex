@@ -5,13 +5,7 @@
 \nopagenumbers{}                                  
 
 
-\usepackage[utf8]{inputenc}
-\usepackage{fontawesome}
-\usepackage{tabularx}
-\usepackage{ragged2e}
-\usepackage[scale=0.8]{geometry}
-\usepackage{multicol}
-\usepackage{import}
+\usepackage[scale=0.8, top=0.5cm, bottom=1cm, left=1cm, right=1cm]{geometry}
 
 % personal data
 \name{Milad}{Teimouri}
@@ -39,7 +33,7 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\customcvproject}[4][.23em]{
+\newcommand*{\customcventry}[7][.23em]{
 %   \vfill\noindent
   \begin{tabular}{@{}l} 
     {\bfseries #2}
@@ -82,7 +76,7 @@
 \begin{minipage}{\maincolumnwidth}%
   \small{
       \begin{itemize}
-      I am a software engineer with over 6 years of experience in both e-commerce and billing companies. I am experienced in migrating from monolithic to microservices and familiar with the microservices pattern. My expertise lies in PHP, SQL, NoSQL, and K8s, and I am passionate about utilizing my skills to develop innovative and efficient solutions.
+      I am a software engineer with over 6 years of experience in both e-commerce and billing companies. I am experienced in migrating from monolithic to microservices and familiar with the microservices pattern. My expertise lies in PHP, SQL, and NoSQL, and I am passionate about learning and utilizing my skills to develop innovative and efficient solutions.
     \end{itemize}}%
 \end{minipage}%
 }

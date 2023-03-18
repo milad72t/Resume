@@ -4,4 +4,7 @@ Milad Teimouri Resume!
 
 
 > [Resume](MiladTeimouri-SoftwareEngineer-CV.pdf)
-> [One Page Resume](MiladTeimouri-SoftwareEngineer-CV-OnePage.pdf)  
+
+> [LinkedIn](https://www.linkedin.com/in/milad-teimouri-909a9872/)  
+
+> [Stackoverflow](https://stackoverflow.com/users/4477569/milad-teimouri)
