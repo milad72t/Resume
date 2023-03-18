@@ -3,5 +3,6 @@
 Milad Teimouri Resume!
 
 
-> [Home Page](https://milad72t.github.io/)  
-> [Resume](MiladTeimouri-SoftwreEngineer-CV.pdf)  
+> [LinkedIn Account] (https://www.linkedin.com/in/milad-teimouri-909a9872/)
+> [Resume](MiladTeimouri-SoftwareEngineer-CV.pdf)
+> [One Page Resume](MiladTeimouri-SoftwareEngineer-CV-OnePage.pdf)  
