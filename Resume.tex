@@ -1,52 +1,54 @@
-\documentclass[11pt,a4paper,roman]{moderncv}       
+\documentclass[11pt,a4paper,roman]{moderncv}
 
-\moderncvstyle{banking}                            
-\moderncvcolor{blue}                                
-\nopagenumbers{}                                  
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\nopagenumbers{}
 
 
 \usepackage[scale=0.8, top=0.5cm, bottom=1cm, left=1cm, right=1cm]{geometry}
 
 % personal data
 \name{Milad}{Teimouri}
-\address{Senior Software Engineer}
-  
-\newcommand*{\customcventry}[7][.23em]{
-  \begin{tabular}{@{}l} 
-    {\bfseries #4}
+\address{Principal Software Engineer}
+
+% \customcventry[vspace]{date}{title}{company}{duration}{bullets}
+%   line 1 : title (bold, left)            company (bold, right)
+%   line 2 : date  (italic, left)          duration (italic, right)
+%   line 3+: bullets (full width)
+\newcommand*{\customcventry}[6][.23em]{
+  \begin{tabular}{@{}l}
+    {\bfseries #3}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\bfseries #5}
+     {\bfseries #4}
   \end{tabular} \\
-  \begin{tabular}{@{}l} 
-    {\itshape #3}
+  \begin{tabular}{@{}l}
+    {\itshape #2}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\itshape #2}
+     {\itshape #5}
   \end{tabular}
-  \ifx&#7&%
+  \ifx&#6&%
   \else{\\%
     \begin{minipage}{\maincolumnwidth}%
-      \small#7%
+      \small#6%
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\customcventry}[7][.23em]{
-%   \vfill\noindent
-  \begin{tabular}{@{}l} 
-    {\bfseries #2}
+% \customcvschool[vspace]{date}{degree}{school}
+\newcommand*{\customcvschool}[4][.23em]{
+  \begin{tabular}{@{}l}
+    {\bfseries #3}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\itshape #3}
+     {\itshape #4}
+  \end{tabular} \\
+  \begin{tabular}{@{}l}
+    {\itshape #2}
   \end{tabular}
-  \ifx&#4&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#4%
-    \end{minipage}}\fi%
   \par\addvspace{#1}}
 
 \setlength{\tabcolsep}{12pt}
@@ -60,14 +62,13 @@
 \vspace*{-25mm}
 
 \begin{center}
-\begin{tabular}{ c c c c }
-  \faEnvelopeO\enspace milad72t@gmail.com & 
+\begin{tabular}{ c c c }
+  \faEnvelopeO\enspace milad72t@gmail.com &
   \faMapMarker\enspace Tehran, Iran &
-  Profiles:    
-\href{https://www.linkedin.com/in/milad-teimouri-909a9872}{\faLinkedin} 
+  Profiles:
+\href{https://www.linkedin.com/in/milad-teimouri-909a9872}{\faLinkedin}
  \href{https://stackoverflow.com/users/4477569/milad-teimouri}{\faStackOverflow}
  \href{https://github.com/milad72t}{\faGithub}
- \href{https://www.goodreads.com/user/show/82884162-milad}{\faBook} 
 \end{tabular}
 \newline
 \end{center}
@@ -75,67 +76,58 @@
 \section{SUMMARY}
 \begin{minipage}{\maincolumnwidth}%
   \small{
-      \begin{itemize}
-      I am a software engineer with over six years of experience in e-commerce and billing companies. Experienced in migrating from monolithic to microservices and familiar with the microservices pattern. My expertise lies in PHP, SQL, and NoSQL, and I am enthusiastic about learning and utilizing my skills to develop innovative and efficient solutions.
-    \end{itemize}}%
+      Principal Software Engineer with 9+ years building high-traffic backend platforms in e-commerce and
+      billing. On the platform (core) team at Digikala --- the largest e-commerce platform in the Middle East ---
+      I set technical direction for the migration from a monolith to microservices at 200k+ RPS, own
+      cross-team architecture decisions, and grow engineers through mentoring, design review, and hiring.
+      Primary stack \textbf{Java / Spring Boot}, with a deep background in PHP, distributed data systems, and
+      Kubernetes.
+      }%
 \end{minipage}%
-}
 
-\section{EXPERIENCES}
-{\customcventry{October  2020 -  Present}{Senior Software Engineer - Platform team}{\href{https://about.digikala.com/en/home/}{Digikala}}{\textasciitilde 3 yrs}{}
-{\begin{itemize}
-  \item \href{https://www.linkedin.com/company/digikala/about/}{Digikala Group} is the largest e-commerce platform in the Middle East with +40M visitors and +5M orders per month.
-        \item As a member of the platform(core) team, engaged in providing the infrastructure for migrating to microservices that support 20k RPS by bringing new technologies and developing our customized framework.
-      \item Innovated a CQRS service for products that handle more than 5K RPS.
-          \item Configured and integrated the Apache APISIX gateway that handles 30k requests as the entry point to more than 50 services.
-  \item Rewrote shopping APIs and refactor legacy codes of \href{https://www.digikala.com/}{digikala.com} resulting in a 40\% reduction in resource requests.
-  \item Designed \& Developed social e-commerce called \href{https://www.adsoftheworld.com/campaigns/digikala-magnet}{Magnet} which is like Instagram, and currently has over 1 million users and \textasciitilde100k posts created per month.
-  \item Participated in onboarding new joiners, hiring process, and revising team structure.
-\item Main used technologies: \textbf{PHP}, \textbf{MySQL}, \textbf{Kafka}, \textbf{Redis}, \textbf{Kubernetes}, \textbf{Gitlab CI/CD}, \textbf{Elasticsearch}, \textbf{MongoDB}, \textbf{Debezium}
+\section{EXPERIENCE}
+\customcventry{October 2020 -- Present}{Principal Software Engineer -- Platform (Core) Team}{\href{https://about.digikala.com/en/home/}{Digikala}}{+6 yrs}{
+\begin{itemize}
+  \item \href{https://www.linkedin.com/company/digikala/about/}{Digikala Group} is the largest e-commerce platform in the Middle East, with +50M visitors and +10M orders per month.
+  \item Set the technical direction for the company's migration from a monolith to microservices, delivering the shared infrastructure and in-house framework that carries \textbf{200k+ RPS} across \textbf{200+ services}.
+  \item Own cross-team architecture decisions and design reviews; define the patterns, standards, and guardrails product teams build on, and drive adoption of new technologies across the organization.
+  \item Mentor engineers and enable teams across \textbf{tribes company-wide}, coaching them to solve their own architecture and platform problems; lead onboarding, run technical interviews, and shape team structure.
+  \item In the shopping squad, rewrote and refactored the legacy shopping APIs of \href{https://www.digikala.com/}{digikala.com}, introduced a \textbf{CQRS} read model for products, and designed \& built \href{https://www.adsoftheworld.com/campaigns/digikala-magnet}{Magnet}, an Instagram-like social commerce platform.
+  \item Main technologies: \textbf{Java / Spring Boot}, \textbf{PHP}, \textbf{Kafka}, \textbf{MySQL}, \textbf{MongoDB}, \textbf{Elasticsearch}, \textbf{Redis}, \textbf{Kubernetes}, \textbf{ArgoCD}, \textbf{GitLab CI}
 \end{itemize}
 }
 
-
-{\customcventry{September 2017 - October 2020}{Backend Software Engineer}{\href{https://www.linkedin.com/company/andishe-computer/}{Andishe Computer}}{3 yrs}{}
-{\begin{itemize}
-  \item Launched a billing system that is used by electricity Companies that handles the data of over 10M Power subscribers from all over the country
-  \item Created subscriber surveillance and bill payment system that has all energy subscriber's data intended to remove bill papers \href{https://bargheman.com/}{(bargheman.com)}
-  \item Structured an automated payment processing system, that gathers financial data from different banks (\textasciitilde2k documents per day) to transmit them to each power distribution and generate financial reports, which removed the need for human work.
-\item Main used technologies: \textbf{Laravel}, \textbf{SQLServer}, \textbf{Docker}, \textbf{MongoDB}, \textbf{Redis}, \textbf{Python}, \textbf{C++}
+\customcventry{September 2017 -- October 2020}{Backend Software Engineer}{\href{https://www.linkedin.com/company/andishe-computer/}{Andishe Computer}}{3 yrs}{
+\begin{itemize}
+  \item Launched a billing system used by national electricity companies, handling data for over \textbf{10M} power subscribers.
+  \item Built \href{https://bargheman.com/}{bargheman.com}, a subscriber surveillance and bill payment system created to eliminate paper bills.
+  \item Structured an automated payment processing system that reconciles financial data from multiple banks (\textasciitilde2k documents per day), routes it to each power distributor, and generates financial reports --- removing the manual process entirely.
+  \item Main technologies: \textbf{PHP / Laravel}, \textbf{SQL Server}, \textbf{MongoDB}, \textbf{Redis}, \textbf{Docker}, \textbf{Python}, \textbf{C++}
 \end{itemize}
 }
 
-{\customcventry{April 2017 - September 2017}{Backend Software Engineer}{Behpardaz Pishro}{6 mth}{}
-{\begin{itemize}
-  \item Completed a system ordered by the Ministry of Power for gathering information about 32M subscribers of electricity from all over the country, generating reports on the data.
-\item Main used technologies: \textbf{Laravel}, \textbf{Oracle}, \textbf{MongoDB}
+\customcventry{April 2017 -- September 2017}{Backend Software Engineer}{Behpardaz Pishro}{6 mth}{
+\begin{itemize}
+  \item Delivered a system for the Ministry of Power aggregating and reporting on \textbf{32M} electricity subscribers nationwide. \textbf{Laravel}, \textbf{Oracle}, \textbf{MongoDB}.
 \end{itemize}
 }
-
-
 
 \section{SKILLS}
 \begin{minipage}{\maincolumnwidth}%
   \small{
       \begin{itemize}
-                \item Proficient  in \textbf{PHP}
-          \item Proficient in \textbf{relational databases} (\textbf{SQL}) and
-          \textbf{Database Design}
-          \item Experienced with \textbf{Microservices} patterns (\textbf{API-GW}, \textbf{SAGA}, \textbf{CQRS}, \textbf{Event Sourcing})
-          \item Experienced with \textbf{NoSQL} databases (\textbf{Redis}, \textbf{MongoDB}, \textbf{Elasticsearch}, \textbf{Memcached}, \textbf{InfluxDB})
-        \item Experienced with \textbf{Docker}, \textbf{Kubernetes}, \textbf{Gitlab CI/CD}, \textbf{Debezium},  
-        \textbf{Kafka} and \textbf{Git}
-          \item Experienced with \textbf{Python}, \textbf{Golang},  and \textbf{C++}
-  \item Experienced with  \textbf{Linux} and Server maintenance
+        \item \textbf{Leadership}: technical direction \& architecture review, mentoring and career growth, hiring \& interviewing, onboarding, cross-team alignment
+        \item \textbf{Architecture}: Microservices (API-GW, CQRS, SAGA, Event Sourcing), event-driven \& distributed system design, monolith-to-microservices migration
+        \item \textbf{Languages}: Java (Spring Boot), PHP, Golang, Python, C++
+        \item \textbf{Data}: Database design and query optimization --- MySQL, SQL Server, Oracle, MongoDB, Elasticsearch, Redis, Kafka
+        \item \textbf{Platform}: Kubernetes, Docker, GitLab CI, ArgoCD (GitOps), Apache APISIX, SSO / Keycloak (OAuth2, OIDC), Linux \& server maintenance
+        \item \textbf{Observability}: Prometheus, Grafana, OpenTelemetry, InfluxDB
     \end{itemize}}%
 \end{minipage}%
-      
-\section{EDUCATION}
-{\customcventry{2016-2018}{Master of Computer Networks engineering - Second Rank, 17.89 GPA}{\href{https://www.linkedin.com/school/iran-university-of-science-and-technology/}{Iran University of Science and Technology}}{}{}{}}
 
-{\customcventry{2012-2016}{Bachelor of Computer engineering - Third Rank, 16.85 GPA}{\href{https://www.linkedin.com/school/iran-university-of-science-and-technology/}{Iran University of Science and Technology}}{}{}{}}
-}
-}
+\section{EDUCATION}
+\customcvschool{2016 -- 2018}{M.Sc. Computer Networks Engineering --- Second Rank, GPA 17.89/20}{\href{https://www.linkedin.com/school/iran-university-of-science-and-technology/}{Iran University of Science and Technology}}
+
+\customcvschool{2012 -- 2016}{B.Sc. Computer Engineering --- Third Rank, GPA 16.85/20}{\href{https://www.linkedin.com/school/iran-university-of-science-and-technology/}{Iran University of Science and Technology}}
 
 \end{document}
-
