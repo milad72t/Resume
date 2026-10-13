@@ -3,7 +3,7 @@
 Milad Teimouri Resume!
 
 
-> [Resume](MiladTeimouri-SoftwareEngineer-CV.pdf)
+> [Resume](Milad-Teimouri-Engineering-Manager-CV.pdf)
 
 > [LinkedIn](https://www.linkedin.com/in/milad-teimouri-909a9872/)  
 
